@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.8 ease;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background: rgba(128, 128, 128, 0.315);
+}
+
+.question_section {
+  border: 1px solid black transparent;
+  border-radius: 10px;
+  width: 80%;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  background: rgba(128, 128, 128, 0.253);
+}
+.question_section #dashboard {
+  display: flex;
+  justify-content: space-around;
+}
+#dashboard #score {
+  color: red;
+  font-weight: 900;
+}
+
+.question_section #dashboard ul {
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  width: 50%;
+  border: 1px solid black transparent;
+  list-style: none;
+}
+#dashboard ul a {
+  color: rgb(41, 35, 35);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+#dashboard ul a:hover {
+  color: rgb(48, 3, 3);
+}
+
+.question_section #display_view {
+  display: flex;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.question_section p {
+  font-size: 10rem;
+  margin: 5px;
+  font-weight: 900;
+  cursor: not-allowed;
+}
+.question_section p:nth-child(1) {
+  color: red;
+}
+.question_section p:nth-child(3) {
+  color: goldenrod;
+}
+.question_section p:nth-child(5) {
+  color: green;
+}
+
+.option_section {
+  border: 1px solid red transparent;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.option_section p {
+  border: 1px solid black transparent;
+  font-size: 10rem;
+  height: 40vh;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.option_section p:nth-child(1) {
+  background: rgb(241, 28, 28);
+  color: gold;
+}
+.option_section p:nth-child(2) {
+  background: rgb(230, 199, 24);
+  color: green;
+}
+.option_section p:nth-child(3) {
+  background: rgb(6, 165, 6);
+  color: red;
+}
+.option_section p:nth-child(1):hover {
+  background: red;
+  color: gold;
+}
+.option_section p:nth-child(2):hover {
+  background: gold;
+  color: green;
+}
+.option_section p:nth-child(3):hover {
+  background: green;
+  color: red;
+}
+
+/* @media screen (width=800px) {
+  .option_section p{
+    
+  }
+} */
